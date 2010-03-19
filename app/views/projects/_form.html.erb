@@ -2,12 +2,11 @@
   <%= f.error_messages %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    Project: <%= f.text_field :name %>
   </div>
   
   <% f.fields_for :tasks do |task_form| %>
-    Task: <%= task_form.text_field :name %>
+    Task: <%= task_form.text_field :name %><br />
     
     <% task_form.fields_for :assignments do |assignment_form| %>
       Assignment: <%= assignment_form.text_field :name %>

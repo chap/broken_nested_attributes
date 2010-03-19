@@ -1,13 +1,13 @@
 <p>
-  <b>Name:</b>
+  <b>Project:</b>
   <%= @project.name %><br />
   
-  Tasks:<br />
+  Task:
   <% @project.tasks.each do |task| %>
-    <%= task.name %>
-    (<% task.assignments.each do |assignment| %>
+    <%= task.name %><br />
+    Assignment: <% task.assignments.each do |assignment| %>
       <%= assignment.name %>
-    <% end %>)
+    <% end %>
   <% end %>
 </p>
 

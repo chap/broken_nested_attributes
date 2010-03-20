@@ -1,9 +1,5 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  task: 
-
-two:
-  name: MyString
-  task: 
+  name: Steve
+  task: one
